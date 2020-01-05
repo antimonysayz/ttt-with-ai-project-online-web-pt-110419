@@ -38,7 +38,8 @@ class Board
     !taken?(position) && position.to_i > 0 && position.to_i <= 9
   end
 
-  def update
+  def update(position, player)
+    self.cells[position.to_i - 1] = player.token
   end
 
 end

@@ -18,4 +18,8 @@ class Board
     puts " #{self.cells[6]} | #{self.cells[7]} | #{self.cells[8]} "
   end
 
+  def position(input)
+    self.cells[input.to_i-1]
+  end
+
 end

@@ -37,5 +37,5 @@ class Board
   def valid_move?(position)
     !taken?(position) && position._to_i > 0 && position.to_i <= 9
   end
-  
+
 end

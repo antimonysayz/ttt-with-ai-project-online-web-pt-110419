@@ -19,7 +19,11 @@ class Board
   end
 
   def position(input)
-    self.cells[input.to_i-1]
+    self.cells[input.to_i - 1]
+  end
+
+  def full?
+    self.cells.all? {|cell| cell = "X" || cell = "O"}
   end
 
 end

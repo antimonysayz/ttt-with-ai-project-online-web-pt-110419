@@ -28,5 +28,11 @@ class Board
 
   def turn_count
     self.cells.count("X") + self.cells.count("O")
+  end
 
+  def taken?(position)
+    self.cells[position.to_i - 1] == "X" || self.cells[position.to_i - 1] == "O"
+
+  def valid_move?(position)
+  end
 end

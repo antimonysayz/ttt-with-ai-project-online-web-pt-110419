@@ -2,8 +2,9 @@
 module Players
   class Human < Player
 
-    def move(position)
-      Board.position(position)
+    def move
+      position = gets.chomp
+      position
     end
 
   end

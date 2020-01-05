@@ -3,7 +3,7 @@ module Players
   class Human < Player
 
     def move(position)
-      self.position
+      board.position(position)
     end
 
   end
